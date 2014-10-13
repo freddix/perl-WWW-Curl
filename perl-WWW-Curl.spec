@@ -3,14 +3,14 @@
 %define		pdir	WWW
 %define		pnam	Curl
 
-Summary:	WWW::Curl::easy - Perl extension interface for libcurl
+Summary:	erl extension interface for libcurl
 Name:		perl-WWW-Curl
-Version:	4.15
+Version:	4.17
 Release:	1
 License:	MPL or MIT/X
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/S/SZ/SZBALINT/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	31c0b8c7e5e2d26bcc8213d702186d5f
+# Source0-md5:	997ac81cd6b03b30b36f7cd930474845
 URL:		http://curl.haxx.se/libcurl/perl/
 BuildRequires:	curl-devel
 BuildRequires:	perl-devel
@@ -49,6 +49,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{perl_vendorarch}/auto/WWW/Curl/Curl.so
 %{perl_vendorarch}/WWW/Curl
 %{perl_vendorarch}/WWW/Curl.pm
-%{perl_vendorarch}/auto/WWW/Curl/Curl.bs
 %{_mandir}/man3/WWW::Curl.3pm*
 
